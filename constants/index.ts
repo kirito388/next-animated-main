@@ -25,46 +25,29 @@ export const Socials = [
   {
     name: "Instagram",
     src: "/instagram.svg",
-  },
-  {
-    name: "Youtube",
-    src: "/youtube.svg",
-  },
-  {
-    name: "Discord",
-    src: "/discord.svg",
-  },
+    href: "https://www.facebook.com/gegeen.zul.3/"
+  }
 ];
 
 export const Projects = [
   {
     name: "Portfolio",
-    src: "/starwars.png",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+    src: "./starwars.mp4",
+ },
   {
     name: "Space",
-    src: "/SpaceWebsite.png",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+    src: "/SpaceWebsite.mp4",
+ },
   {
     name: "Podcast",
-    src: "/matrix.png",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+    src: "/matrix.mp4",
+ },
   {
-    name: "Component",
-    src: "/skills.png",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+    name: "tailwind",
+    src: "/skills.mp4",
+ },
   {
     name: "Lend.mn",
-    src: "/webapp.png",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+    src: "/webapp.mp4",
+},
 ];

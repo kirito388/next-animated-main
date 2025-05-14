@@ -15,13 +15,13 @@ const Navbar = () => {
   const path = usePathname()
 
   useEffect(() => {
-    if(prevPath != path) {
+    if (prevPath != path) {
       setIsRouting(true)
     }
   }, [path, prevPath])
 
   useEffect(() => {
-    if(isRouting) {
+    if (isRouting) {
       setPrevPath(path)
 
       const timeout = setTimeout(() => {
@@ -63,18 +63,26 @@ const Navbar = () => {
             </div>
           </div>
         </AnimatePresence>
-
         <div className="hidden md:flex flex-row gap-5 mr-10">
           {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
+            <Link
+              href={social.href}
               key={social.name}
-              width={24}
-              height={24}
-            />
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform transform hover:scale-110"
+            >
+              <Image
+                src={social.src}
+                alt={social.name}
+                width={24}
+                height={24}
+                className="cursor-pointer"
+              />
+            </Link>
           ))}
         </div>
+
       </div>
     </div>
   );
